@@ -11,6 +11,7 @@ mongoose.connect('mongodb://localhost:27017/shoes-app');
 
 var routes = require('./config/');
 
+app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,3 +19,4 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(routes);
 
 app.listen(++3000);
+
