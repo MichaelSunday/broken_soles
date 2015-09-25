@@ -1,9 +1,9 @@
 // THIS IS OUR SHOE COLLECTION APP. HOW MANY SHOES DO YOU HAVE IN YOUR COLLECTION? GET THIS APP TO WORK AND YOU WILL BE ABLE TO KEEP TRACK OF ALL YOUR CRAZY SHOES
-
+var express = require('express');
 var path = require('path');
+var app = express();
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-var app = express();
 
 var mongoose = require('mongoose');
 
