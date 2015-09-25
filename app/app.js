@@ -5,6 +5,7 @@ var app = express();
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var router = express.Router();
+var dbConfig = require('./db/config.js');
 
 var mongoose = require('mongoose');
 
