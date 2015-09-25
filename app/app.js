@@ -5,13 +5,12 @@ var app = express();
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var router = express.Router();
-var dbConfig = require('./db/config.js');
 
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/shoes-app');
 
-var routes = require('./config/');
+var routes = require('./config/routes');
 
 app.set('view engine', 'ejs');
 app.use(logger('dev'));
