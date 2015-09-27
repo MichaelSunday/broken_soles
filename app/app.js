@@ -9,9 +9,10 @@ var router = express.Router();
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/shoes-app');
+// mongoose.connect('mongodb://localhost:27017/shoes-app');
 
 var routes = require('./config/routes');
+var shoeController = require('./controllers/persons.js');
 
 app.set('view engine', 'ejs');
 app.use(logger('dev'));

@@ -11,20 +11,20 @@ router.route('/soles')
   //GET all soles
   .get(solesController.getAll)
 
-  //POST a new blob
-  .post(solesController.createSole);
+//   //POST a new blob
+//   .post(solesController.createSole);
 
 
-router.route('/soles/:id')
+// router.route('/soles/:id')
 
-  // GET return specific Sole
-  .get(solesFrom.kitchen :)
+//   // GET return specific Sole
+//   .get(shoesFrom.kitchen :)
 
-  // PATCH update existing Sole
-  .patch(solesController.updateSole)
+//   // PATCH update existing Sole
+//   .patch(shoesController.updateSole)
 
-  // DELETE remove specific Sole from DB
-  .DELETE(solesController.removeSole);
+//   // DELETE remove specific Sole from DB
+//   .DELETE(shoesController.removeSole);
 
 
-module.exports = router
+// module.exports = router
